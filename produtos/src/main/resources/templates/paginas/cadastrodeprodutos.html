@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro de Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body data-bs-theme="dark">
+    
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5" style="border-bottom: 1px solid #0aa;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="/iconemercado.png" alt="Bootstrap" width="30" height="24"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/cadastrodeprodutos">Area do Vendedor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/produtos">MarketPlace</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- container -->
+    <main>
+        <div class="container">
+            <h1>Cadastrar Produtos</h1>
+            <p>Essa Página é para voce vendedor que deseja publicar seu produto em nosso MarketPlace</p>
+            <hr class="mb-5" />
+
+            <!-- formulário -->
+            <form method="POST">
+                <div class="row">
+                    <!-- título -->
+                    <div class="col-12 col-md-5 mb-3">
+                        <label for="nomeProduto" class="form-label">Nome do Produto</label>
+                        <input type="text" class="form-control" id="nomeProduto" name="nomeProduto" placeholder="Informe o nome do produto" required />
+                    </div>
+                    
+                    <!-- isbn -->
+                    <div class="col-12 col-md-5 mb-3">
+                        <label for="categoriaProduto" class="form-label">Categoria do produto</label>
+                        <input type="text" class="form-control" id="categoriaProduto" name="categoriaProduto" placeholder="Escolha uma categoria para seu produto" required />
+                    </div>
+                    
+                    <!-- nome do autor -->
+                    <div class="col-12 col-md-5 mb-3">
+                        <label for="especificacaoProduto" class="form-label">Especificações do produto</label>
+                        <input type="text" class="form-control" id="especificacaoProduto" name="especificacaoProduto" placeholder="Especifique mais seu produto" required />
+                    </div>
+                    
+                    <!-- sobrenome do autor -->
+                    <div class="col-12 col-md-5 mb-3">
+                        <label for="descricaoProduto" class="form-label">Descrição do Produto</label>
+                        <input type="text" class="form-control" id="descricaoProduto" name="descricaoProduto" placeholder="Descreva sobre seu produto" required />
+                    </div>
+
+                    <!-- número de páginas -->
+                    <div class="col-12 col-md-5 mb-3">
+                        <label for="precoProduto" class="form-label">Preço</label>
+                        <input type="number" class="form-control" id="precoProduto" name="precoProduto" placeholder="Informe o preço" required />
+                    </div>
+                    
+                    <!-- editora -->
+                    <div class="col-12 col-md-5 mb-3">
+                        <label for="nomeVendedor" class="form-label">Nome do Vendedor</label>
+                        <input type="text" class="form-control" id="nomeVendedor" name="nomeVendedor" placeholder="Informe seu nome" required />
+                    </div>
+                    
+                    <!-- edição -->
+                    <div class="col-12 col-md-5 mb-3">
+                        <label for="telefoneVendedor" class="form-label">Telefone do Vendedor</label>
+                        <input type="text" class="form-control" id="telefoneVendedor" name="telefoneVendedor" placeholder="Informe seu telefone para contato" required />
+                    </div>
+
+                    <div class="col-12 col-md-5 mb-3">
+                        <label for="emailVendedor" class="form-label">Email do Vendedor</label>
+                        <input type="text" class="form-control" id="emailVendedor" name="emailVendedor" placeholder="Informe seu Email para contato" required />
+                    </div>
+
+                    <!-- botão -->
+                    <div class="col-12 col-md-5 mb-5" style="margin-left: 41%;">
+                        <button type="submit" class="btn btn-primary">Vender</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
